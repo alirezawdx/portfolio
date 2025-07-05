@@ -6,7 +6,7 @@ const props = defineProps({
 
 <template>
   <li>
-    <a :href="props.href" class="text-[#050505] hover:text-[#4FC3F7] duration-150 p-0 m-0">
+    <a :href="props.href" class="text-[#050505] hover:text-[#4FC3F7] font-medium duration-150 p-0 m-0">
       <slot></slot>
     </a>
   </li>
