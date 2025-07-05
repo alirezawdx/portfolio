@@ -7,7 +7,9 @@ const props = defineProps({
 </script>
 
 <template>
-  <ul class="flex items-center">
+  <ul
+    class="flex items-start md:items-center justify-start md:justify-between flex-col md:flex-row"
+  >
     <MenuItem v-for="link in props.links" :href="link.href">
       {{ link.text }}
     </MenuItem>

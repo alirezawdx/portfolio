@@ -14,7 +14,9 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.11",
+    "motion-v": "^1.4.0",
     "tailwindcss": "^4.1.11",
+    "unplugin-vue-components": "^28.8.0",
     "vue": "^3.5.17",
     "vue-router": "^4.5.1"
   },
