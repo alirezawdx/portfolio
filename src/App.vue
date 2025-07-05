@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import NavbarMenu from './layouts/NavbarMenu.vue'
+</script>
+
 <template>
-  <div class="text-3xl font-bold text-gray-700 p-12">Ready to go.</div>
+  <div class="container mx-auto py-12">
+    <NavbarMenu />
+  </div>
 </template>
