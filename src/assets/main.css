@@ -1,1 +1,7 @@
+@import url('fonts/Poppins/font-face.css');
+@import url('fonts/Montserrat/font-face.css');
 @import 'tailwindcss';
+
+body {
+    font-family: Poppins, sans-serif;
+}
