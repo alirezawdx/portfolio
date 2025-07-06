@@ -53,7 +53,7 @@ const links = [
     <transition>
       <div
         v-show="menuOpen"
-        class="bg-[#E0E8F6] w-full h-full fixed top-0 left-0 flex justify-start items-start flex-col gap-6 p-12"
+        class="bg-[#E0E8F6] w-full h-full fixed top-0 left-0 flex justify-start items-start flex-col gap-6 p-12 z-50"
       >
         <div class="flex gap-2 justify-between items-center w-full mb-12">
           <SiteLogo class="h-8" />
