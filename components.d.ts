@@ -11,8 +11,10 @@ declare module 'vue' {
     DarkModeButton: typeof import('./src/components/DarkModeButton.vue')['default']
     MenuItem: typeof import('./src/components/MenuItem.vue')['default']
     MenuList: typeof import('./src/components/MenuList.vue')['default']
+    ProjectItem: typeof import('./src/components/ProjectItem.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    ServiceItem: typeof import('./src/components/ServiceItem.vue')['default']
     SingleButton: typeof import('./src/components/SingleButton.vue')['default']
     SiteLogo: typeof import('./src/components/SiteLogo.vue')['default']
   }
