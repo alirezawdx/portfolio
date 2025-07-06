@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import FooterLayout from './layouts/FooterLayout.vue'
 import NavbarMenu from './layouts/NavbarMenu.vue'
 import HomeView from './views/HomeView.vue'
 </script>
@@ -11,4 +12,5 @@ import HomeView from './views/HomeView.vue'
       <HomeView />
     </main>
   </div>
+  <FooterLayout />
 </template>
