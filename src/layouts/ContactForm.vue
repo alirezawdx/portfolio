@@ -50,7 +50,7 @@
     </div>
     <SingleButton
       href="/none"
-      class="py-4 text-center bg-[#484E53] text-white dark:bg-white dark:bg-white dark:text-black dark:border-white"
+      class="py-4 text-center bg-[#484E53] text-white dark:bg-white dark:text-black dark:border-white"
       >Get in touch</SingleButton
     >
   </form>

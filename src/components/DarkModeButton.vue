@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue'
 
-const dark = ref(false)
+const dark = ref(true)
 
 const html = document.querySelector('html')
 const toggleDarkMode = () => {
@@ -11,6 +11,9 @@ const toggleDarkMode = () => {
 }
 
 onMounted(() => {
+  if (localStorage.getItem('darkModeOn') != undefined) {
+    localStorage.setItem('darkModeOn', 'off')
+  }
   dark.value = localStorage.getItem('darkModeOn') == 'on' ? true : false
   if (dark.value == true) {
     html?.classList.add('dark')
