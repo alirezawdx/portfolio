@@ -26,7 +26,7 @@ onMounted(() => {
 
 <template>
   <div
-    class="w-full p-5 -mt-20 fixed z-50 left-[50%] translate-x-[-50%] duration-150 bg-[#E0E8F6]"
+    class="w-full p-5 -mt-20 fixed z-50 left-[50%] translate-x-[-50%] duration-150 bg-[#E0E8F6] dark:bg-[#1E1E1E] dark:text-white"
     :class="shadowForNavbar ? 'shadow-md' : ''"
   >
     <header class="container mx-auto flex justify-between items-center">
@@ -64,15 +64,15 @@ onMounted(() => {
       <transition>
         <div
           v-show="menuOpen"
-          class="bg-[#E0E8F6] w-full h-screen fixed top-0 left-0 flex justify-start items-start flex-col gap-6 p-12 z-50"
+          class="bg-[#E0E8F6] dark:bg-[#1E1E1E] dark:text-[#C1C1C1] w-full h-screen fixed top-0 left-0 flex justify-start items-start flex-col gap-6 p-12 z-50"
         >
           <div class="flex gap-2 justify-between items-center w-full mb-12">
             <SiteLogo class="h-8" />
 
             <div>
-              <DarkModeButton class="" />
+              <DarkModeButton />
               <button
-                class="p-3 cursor-pointer text-[#484E53] hover:bg-[#e1e1e1] duration-150 rounded-lg"
+                class="p-3 cursor-pointer text-[#484E53] hover:bg-[#e1e1e1] dark:bg-[#1E1E1E] dark:hover:bg-[#333] duration-150 rounded-lg"
                 @click="menuOpen = false"
               >
                 <svg

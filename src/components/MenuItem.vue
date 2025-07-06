@@ -8,7 +8,7 @@ const props = defineProps({
   <li class="lowercase">
     <a
       :href="props.href"
-      class="text-[#050505] hover:text-[#4FC3F7] font-medium duration-150 p-0 m-0 hidden md:inline-block"
+      class="text-[#050505] hover:text-[#4FC3F7] font-medium duration-150 p-0 m-0 hidden md:inline-block dark:text-[#C1C1C1]"
     >
       <span class="text-[#4FC3F7] me-1">/</span> <slot></slot>
     </a>

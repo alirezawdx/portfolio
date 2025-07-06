@@ -3,10 +3,12 @@
     <div
       class="container mx-auto flex justify-between items-center -mt-10 flex-wrap px-5 gap-8 mb-12"
     >
-      <h2 class="text-4xl font-semibold font-[Montserrat]">Let's<br />Work Together -</h2>
+      <h2 class="text-4xl font-semibold font-[Montserrat] dark:text-[#C1C1C1]">
+        Let's<br />Work Together -
+      </h2>
       <a
         href="mailto:alirezawdx@gmail.com"
-        class="flex justify-between items-center gap-3 border p-4 rounded-xl"
+        class="flex justify-between items-center gap-3 border p-4 rounded-xl dark:text-[#C1C1C1] dark:border-[#C1C1C1]"
       >
         <svg
           class="w-5 h-5 md:w-6 md:h-6 text-gray-800 dark:text-white"
@@ -30,7 +32,7 @@
     </div>
     <div class="border-t">
       <div class="container mx-auto py-8 px-5 font-light flex justify-between items-center">
-        <span>&copy; 2025 all rights reserved.</span>
+        <span class="dark:text-[#C1C1C1]">&copy; 2025 all rights reserved.</span>
         <span class="flex justify-between items-center gap-3">
           <div>
             <svg

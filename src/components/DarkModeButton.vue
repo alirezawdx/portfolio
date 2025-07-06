@@ -1,13 +1,29 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { onMounted, ref } from 'vue'
 
 const dark = ref(false)
+
+const html = document.querySelector('html')
+const toggleDarkMode = () => {
+  dark.value = !dark.value
+  html?.classList.toggle('dark')
+  localStorage.setItem('darkModeOn', dark.value == true ? 'on' : 'off')
+}
+
+onMounted(() => {
+  dark.value = localStorage.getItem('darkModeOn') == 'on' ? true : false
+  if (dark.value == true) {
+    html?.classList.add('dark')
+  } else if (dark.value == false) {
+    html?.classList.remove('dark')
+  }
+})
 </script>
 
 <template>
   <button
-    class="p-3 cursor-pointer text-[#484E53] hover:bg-[#e1e1e1] duration-150 rounded-lg"
-    @click="dark = !dark"
+    class="p-3 cursor-pointer text-[#484E53] hover:bg-[#e1e1e1] dark:bg-[#1E1E1E] dark:hover:bg-[#333] duration-150 rounded-lg"
+    @click="toggleDarkMode"
   >
     <transition mode="out-in">
       <svg

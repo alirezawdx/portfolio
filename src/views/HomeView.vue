@@ -27,7 +27,7 @@ const projects = ref([
 
 <template>
   <div
-    class="relative min-h-96 my-24 inset-shadow-[0_0_50px_50px] inset-shadow-[#E0E8F6] flex flex-col gap-8 justify-center items-center text-center overflow-hidden"
+    class="relative min-h-96 my-24 inset-shadow-[0_0_50px_50px] duration-150 inset-shadow-[#E0E8F6] dark:inset-shadow-[#1E1E1E] flex flex-col gap-8 justify-center items-center text-center overflow-hidden"
   >
     <div class="bg-pattern min-h-96 py-40 absolute -z-10 duration-1000"></div>
     <img
@@ -36,59 +36,67 @@ const projects = ref([
       class="w-40 h-40 object-cover rounded-full shadow-2xl"
     />
 
-    <h1 class="text-5xl font-extrabold font-[Montserrat] text-[#484E53] uppercase">
+    <h1 class="text-5xl font-extrabold font-[Montserrat] text-[#484E53] dark:text-white uppercase">
       Alireza Sadeghi
     </h1>
     <h2 class="text-2xl font-semibold font-[Montserrat] text-[#484E53] lowercase -mt-4">
-      <span class="bg-gradient-to-r from-[#4FC3F7] to-[#484E53] bg-clip-text text-transparent">
+      <span
+        class="bg-gradient-to-r from-[#4FC3F7] to-[#484E53] dark:to-[#C1C1C1] bg-clip-text text-transparent"
+      >
         front-end magician
       </span>
       <span class="text-3xl">🧙‍♂️</span>
     </h2>
-    <p class="text-[#484E53] max-w-3/4 md:max-w-1/2 -mt-4">
+    <p class="text-[#484E53] max-w-3/4 md:max-w-1/2 -mt-4 dark:text-[#C1C1C1]">
       As a passionate data scientist, with expertise in machine learning, AI, and data analytics, I
       thrive on the challenges of exploring complex data landscapes and uncovering meaningful
       patterns that drive innovation
     </p>
 
-    <SingleButton href="/contact" shape="pill">Contact me</SingleButton>
+    <SingleButton href="/contact" shape="pill" class="dark:text-white">Contact me</SingleButton>
   </div>
 
   <div name="#about" class="my-40 flex flex-col gap-8 justify-center items-center text-center">
-    <h2 class="text-4xl font-extrabold font-[Montserrat] text-[#484E53] lowercase">
+    <h2 class="text-4xl font-extrabold font-[Montserrat] text-[#484E53] lowercase dark:text-white">
       <span class="text-[#4FC3F7] font-medium">/</span> about
     </h2>
     <h3 class="text-xl font-medium font-[Montserrat] text-[#484E53] lowercase -mt-5">
-      <span class="bg-gradient-to-r from-[#4FC3F7] to-[#484E53] bg-clip-text text-transparent">
+      <span
+        class="bg-gradient-to-r dark:to-[#C1C1C1] from-[#4FC3F7] to-[#484E53] bg-clip-text text-transparent"
+      >
         Get to know me
       </span>
     </h3>
-    <p class="text-[#484E53] max-w-3/4 md:max-w-1/2">
+    <p class="text-[#484E53] max-w-3/4 md:max-w-1/2 dark:text-[#C1C1C1]">
       Hi there! I'm [Your Name], a data scientist specializing in data analytics, predictive
       modeling, natural language processing, machine learning, and AI chatbots. With a passion for
       unraveling insights from complex datasets, I'm dedicated to helping businesses make informed
       decisions and stay ahead in today's data-driven world.
     </p>
-    <p class="text-[#484E53] max-w-3/4 md:max-w-1/2">
+    <p class="text-[#484E53] max-w-3/4 md:max-w-1/2 dark:text-[#C1C1C1]">
       I bring a blend of technical expertise, hands-on experience, and a commitment to clear
       communication to every project. Whether it's uncovering hidden patterns, predicting future
       trends, or automating processes with AI, I'm here to help you harness the full potential of
       your data.
     </p>
-    <p class="text-[#484E53] max-w-3/4 md:max-w-1/2">
+    <p class="text-[#484E53] max-w-3/4 md:max-w-1/2 dark:text-[#C1C1C1]">
       Let's work together to transform your data into actionable insights that drive real results.
       Get in touch, and let's start unlocking the power of your data today!
     </p>
 
-    <SingleButton href="/contact" shape="pill">Downlaod Resume</SingleButton>
+    <SingleButton href="/contact" shape="pill" class="dark:text-white"
+      >Downlaod Resume</SingleButton
+    >
   </div>
 
   <div name="#projects" class="my-40 flex flex-col gap-8 justify-center items-center text-center">
-    <h2 class="text-4xl font-extrabold font-[Montserrat] text-[#484E53] lowercase">
+    <h2 class="text-4xl font-extrabold font-[Montserrat] text-[#484E53] lowercase dark:text-white">
       <span class="text-[#4FC3F7] font-medium">/</span> projects
     </h2>
     <h3 class="text-xl font-medium font-[Montserrat] text-[#484E53] lowercase -mt-5">
-      <span class="bg-gradient-to-r from-[#4FC3F7] to-[#484E53] bg-clip-text text-transparent">
+      <span
+        class="bg-gradient-to-r dark:to-[#C1C1C1] from-[#4FC3F7] to-[#484E53] bg-clip-text text-transparent"
+      >
         taste my vibe
       </span>
     </h3>
@@ -104,15 +112,17 @@ const projects = ref([
       >
     </div>
 
-    <SingleButton href="/contact" shape="pill">View All</SingleButton>
+    <SingleButton href="/contact" shape="pill" class="dark:text-white">View All</SingleButton>
   </div>
 
   <div name="#services" class="my-40 flex flex-col gap-8 justify-center items-center text-center">
-    <h2 class="text-4xl font-extrabold font-[Montserrat] text-[#484E53] lowercase">
+    <h2 class="text-4xl font-extrabold font-[Montserrat] text-[#484E53] lowercase dark:text-white">
       <span class="text-[#4FC3F7] font-medium">/</span> services
     </h2>
     <h3 class="text-xl font-medium font-[Montserrat] text-[#484E53] lowercase -mt-5">
-      <span class="bg-gradient-to-r from-[#4FC3F7] to-[#484E53] bg-clip-text text-transparent">
+      <span
+        class="bg-gradient-to-r dark:to-[#C1C1C1] from-[#4FC3F7] to-[#484E53] bg-clip-text text-transparent"
+      >
         what i do
       </span>
     </h3>
@@ -121,11 +131,13 @@ const projects = ref([
   </div>
 
   <div name="#contact" class="my-40 flex flex-col gap-8 justify-center items-center text-center">
-    <h2 class="text-4xl font-extrabold font-[Montserrat] text-[#484E53] lowercase">
+    <h2 class="text-4xl font-extrabold font-[Montserrat] text-[#484E53] lowercase dark:text-white">
       <span class="text-[#4FC3F7] font-medium">/</span> contact
     </h2>
     <h3 class="text-xl font-medium font-[Montserrat] text-[#484E53] lowercase -mt-5">
-      <span class="bg-gradient-to-r from-[#4FC3F7] to-[#484E53] bg-clip-text text-transparent">
+      <span
+        class="bg-gradient-to-r dark:to-[#C1C1C1] from-[#4FC3F7] to-[#484E53] bg-clip-text text-transparent"
+      >
         send me a message
       </span>
     </h3>
@@ -154,7 +166,7 @@ const projects = ref([
   animation-duration: 500s;
   animation-iteration-count: infinite;
   background-position: center center;
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='10000' height='600' preserveAspectRatio='none' viewBox='0 0 10000 600'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1091%26quot%3b)' fill='none'%3e%3crect width='10000' height='600' x='0' y='0' fill='rgba(224%2c 232%2c 246%2c 1)'%3e%3c/rect%3e%3cpath d='M -23.32347346935569%2c245 C 158.68%2c282.8 522.68%2c448.2 886.6765265306443%2c434 C 1250.68%2c419.8 1432.68%2c190.8 1796.6765265306444%2c174 C 2160.68%2c157.2 2342.68%2c337.2 2706.6765265306444%2c350 C 3070.68%2c362.8 3252.68%2c246.2 3616.6765265306444%2c238 C 3980.68%2c229.8 4162.68%2c313.8 4526.676526530644%2c309 C 4890.68%2c304.2 5072.68%2c181.6 5436.676526530644%2c214 C 5800.68%2c246.4 5982.68%2c454.2 6346.676526530644%2c471 C 6710.68%2c487.8 6892.68%2c310 7256.676526530644%2c298 C 7620.68%2c286 7802.68%2c426 8166.676526530644%2c411 C 8530.68%2c396 8712.68%2c209.4 9076.676526530644%2c223 C 9440.68%2c236.6 9622.68%2c467.6 9986.676526530644%2c479 C 10350.68%2c490.4 10894.01%2c294.2 10896.676526530644%2c280 C 10899.34%2c265.8 10179.34%2c382.4 10000%2c408' stroke='rgba(159%2c 159%2c 159%2c 0.37)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -443.09861639625234%2c413 C -261.1%2c370.2 102.9%2c200.4 466.90138360374766%2c199 C 830.9%2c197.6 1012.9%2c386.4 1376.9013836037477%2c406 C 1740.9%2c425.6 1922.9%2c284.6 2286.9013836037475%2c297 C 2650.9%2c309.4 2832.9%2c478.2 3196.9013836037475%2c468 C 3560.9%2c457.8 3742.9%2c272.8 4106.9013836037475%2c246 C 4470.9%2c219.2 4652.9%2c349.2 5016.9013836037475%2c334 C 5380.9%2c318.8 5562.9%2c146.8 5926.9013836037475%2c170 C 6290.9%2c193.2 6472.9%2c445.8 6836.9013836037475%2c450 C 7200.9%2c454.2 7382.9%2c193.8 7746.9013836037475%2c191 C 8110.9%2c188.2 8292.9%2c418 8656.901383603748%2c436 C 9020.9%2c454 9202.9%2c306.2 9566.901383603748%2c281 C 9930.9%2c255.8 10390.28%2c322.4 10476.901383603748%2c310 C 10563.52%2c297.6 10095.38%2c237.2 10000%2c219' stroke='rgba(159%2c 159%2c 159%2c 0.37)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -830.1754635053866%2c194 C -648.18%2c252 -284.18%2c476.6 79.82453649461338%2c484 C 443.82%2c491.4 625.82%2c257.8 989.8245364946134%2c231 C 1353.82%2c204.2 1535.82%2c365 1899.8245364946133%2c350 C 2263.82%2c335 2445.82%2c148.4 2809.8245364946133%2c156 C 3173.82%2c163.6 3355.82%2c367.4 3719.8245364946133%2c388 C 4083.82%2c408.6 4265.82%2c252.4 4629.824536494613%2c259 C 4993.82%2c265.6 5175.82%2c447 5539.824536494613%2c421 C 5903.82%2c395 6085.82%2c121.2 6449.824536494613%2c129 C 6813.82%2c136.8 6995.82%2c453.8 7359.824536494613%2c460 C 7723.82%2c466.2 7905.82%2c156.8 8269.824536494614%2c160 C 8633.82%2c163.2 8815.82%2c479.6 9179.824536494614%2c476 C 9543.82%2c472.4 9925.79%2c145.2 10089.824536494614%2c142 C 10253.86%2c138.8 10017.96%2c396.4 10000%2c460' stroke='rgba(159%2c 159%2c 159%2c 0.37)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -369.9441006459008%2c155 C -187.94%2c217 176.06%2c469.6 540.0558993540992%2c465 C 904.06%2c460.4 1086.06%2c127.6 1450.0558993540992%2c132 C 1814.06%2c136.4 1996.06%2c457 2360.055899354099%2c487 C 2724.06%2c517 2906.06%2c302.6 3270.055899354099%2c282 C 3634.06%2c261.4 3816.06%2c386.2 4180.055899354099%2c384 C 4544.06%2c381.8 4726.06%2c254.6 5090.055899354099%2c271 C 5454.06%2c287.4 5636.06%2c466.4 6000.055899354099%2c466 C 6364.06%2c465.6 6546.06%2c268 6910.055899354099%2c269 C 7274.06%2c270 7456.06%2c482.8 7820.055899354099%2c471 C 8184.06%2c459.2 8366.06%2c240.4 8730.0558993541%2c210 C 9094.06%2c179.6 9276.06%2c334.4 9640.0558993541%2c319 C 10004.06%2c303.6 10478.07%2c124.8 10550.0558993541%2c133 C 10622.04%2c141.2 10110.01%2c314.6 10000%2c360' stroke='rgba(159%2c 159%2c 159%2c 0.37)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1091'%3e%3crect width='10000' height='600' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='10000' height='600' preserveAspectRatio='none' viewBox='0 0 10000 600'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1002%26quot%3b)' fill='none'%3e%3cpath d='M -573.2675044083022%2c175 C -391.27%2c226.6 -27.27%2c435.6 336.7324955916978%2c433 C 700.73%2c430.4 882.73%2c183 1246.732495591698%2c162 C 1610.73%2c141 1792.73%2c303.2 2156.732495591698%2c328 C 2520.73%2c352.8 2702.73%2c265.6 3066.732495591698%2c286 C 3430.73%2c306.4 3612.73%2c445.2 3976.732495591698%2c430 C 4340.73%2c414.8 4522.73%2c198.6 4886.732495591697%2c210 C 5250.73%2c221.4 5432.73%2c495 5796.732495591697%2c487 C 6160.73%2c479 6342.73%2c204 6706.732495591697%2c170 C 7070.73%2c136 7252.73%2c317.2 7616.732495591697%2c317 C 7980.73%2c316.8 8162.73%2c169 8526.732495591697%2c169 C 8890.73%2c169 9072.73%2c315.6 9436.732495591697%2c317 C 9800.73%2c318.4 10234.08%2c165.4 10346.732495591697%2c176 C 10459.39%2c186.6 10069.35%2c331.2 10000%2c370' stroke='rgba(199%2c 199%2c 199%2c 0.28)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -1597.3396065207135%2c154 C -1415.34%2c208.2 -1051.34%2c399.2 -687.3396065207135%2c425 C -323.34%2c450.8 -141.34%2c303 222.66039347928654%2c283 C 586.66%2c263 768.66%2c325.2 1132.6603934792865%2c325 C 1496.66%2c324.8 1678.66%2c261.2 2042.6603934792865%2c282 C 2406.66%2c302.8 2588.66%2c440.8 2952.6603934792865%2c429 C 3316.66%2c417.2 3498.66%2c246.6 3862.6603934792865%2c223 C 4226.66%2c199.4 4408.66%2c310.4 4772.6603934792865%2c311 C 5136.66%2c311.6 5318.66%2c206 5682.6603934792865%2c226 C 6046.66%2c246 6228.66%2c400.8 6592.6603934792865%2c411 C 6956.66%2c421.2 7138.66%2c287 7502.6603934792865%2c277 C 7866.66%2c267 8048.66%2c387.6 8412.660393479287%2c361 C 8776.66%2c334.4 9005.19%2c148.4 9322.660393479287%2c144 C 9640.13%2c139.6 9864.53%2c300 10000%2c339' stroke='rgba(199%2c 199%2c 199%2c 0.28)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -1281.9892665352381%2c460 C -1099.99%2c393.4 -735.99%2c140.2 -371.989266535238%2c127 C -7.99%2c113.8 174.01%2c386.8 538.010733464762%2c394 C 902.01%2c401.2 1084.01%2c165 1448.0107334647619%2c163 C 1812.01%2c161 1994.01%2c367.2 2358.010733464762%2c384 C 2722.01%2c400.8 2904.01%2c257.6 3268.010733464762%2c247 C 3632.01%2c236.4 3814.01%2c322.8 4178.010733464762%2c331 C 4542.01%2c339.2 4724.01%2c271.2 5088.010733464762%2c288 C 5452.01%2c304.8 5634.01%2c449.2 5998.010733464762%2c415 C 6362.01%2c380.8 6544.01%2c107.6 6908.010733464762%2c117 C 7272.01%2c126.4 7454.01%2c435 7818.010733464762%2c462 C 8182.01%2c489 8364.01%2c282.4 8728.010733464762%2c252 C 9092.01%2c221.6 9383.61%2c320.6 9638.010733464762%2c310 C 9892.41%2c299.4 9927.6%2c221.2 10000%2c199' stroke='rgba(199%2c 199%2c 199%2c 0.28)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -259.3873041177908%2c125 C -77.39%2c179 286.61%2c375.8 650.6126958822092%2c395 C 1014.61%2c414.2 1196.61%2c231 1560.6126958822092%2c221 C 1924.61%2c211 2106.61%2c357.8 2470.612695882209%2c345 C 2834.61%2c332.2 3016.61%2c138.4 3380.612695882209%2c157 C 3744.61%2c175.6 3926.61%2c424.8 4290.61269588221%2c438 C 4654.61%2c451.2 4836.61%2c221.8 5200.61269588221%2c223 C 5564.61%2c224.2 5746.61%2c440.4 6110.61269588221%2c444 C 6474.61%2c447.6 6656.61%2c265 7020.61269588221%2c241 C 7384.61%2c217 7566.61%2c324.4 7930.61269588221%2c324 C 8294.61%2c323.6 8476.61%2c231.6 8840.61269588221%2c239 C 9204.61%2c246.4 9386.61%2c382.2 9750.61269588221%2c361 C 10114.61%2c339.8 10610.74%2c140.4 10660.61269588221%2c133 C 10710.49%2c125.6 10132.12%2c285.8 10000%2c324' stroke='rgba(199%2c 199%2c 199%2c 0.28)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1002'%3e%3crect width='10000' height='600' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
 }
 
 select {
