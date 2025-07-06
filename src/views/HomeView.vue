@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import SingleButton from '@/components/SingleButton.vue'
-import Character from './../assets/imgs/character.webp'
+import Character from './../assets/imgs/me-2.jpeg'
+import Emoji from './../assets/imgs/magician.png'
 import ProjectItem from '@/components/ProjectItem.vue'
 import { ref } from 'vue'
 import ServicesList from '@/layouts/ServicesList.vue'
@@ -11,16 +12,6 @@ const projects = ref([
     img: 'https://static.roocket.ir/images/cover/2025/3/15/Pqu8W5Y0yhUn8AOvavG8a3jbNYH9vPKzac1VSywd.jpg',
     title: 'The First Project Item',
     tech: 'Vue / Tailwind',
-  },
-  {
-    img: 'https://static.roocket.ir/images/cover/2023/12/1/bfXiSAuUHdHj6jI8sUsQx0j7MdTGRd3zF4O3Lyzc.jpg',
-    title: 'The Second Project Item',
-    tech: 'Nuxt / Tailwind',
-  },
-  {
-    img: 'https://static.roocket.ir/images/cover/2023/12/1/DVR05FQ8KOVnKQSlBPBXxsWkx3dqqwhk7a3ibULR.jpg',
-    title: 'The Third Project Item',
-    tech: 'FastAPI / Tailwind',
   },
 ])
 </script>
@@ -41,19 +32,26 @@ const projects = ref([
     </h1>
     <h2 class="text-2xl font-semibold font-[Montserrat] text-[#484E53] lowercase -mt-4">
       <span
-        class="bg-gradient-to-r from-[#4FC3F7] to-[#484E53] dark:to-[#C1C1C1] bg-clip-text text-transparent"
+        class="flex justify-center items-center gap-1 bg-gradient-to-r from-[#4FC3F7] to-[#484E53] dark:to-[#C1C1C1] bg-clip-text text-transparent"
       >
         front-end magician
+        <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg">
+          <image :href="Emoji" class="w-full h-full" />
+        </svg>
       </span>
-      <span class="text-3xl">🧙‍♂️</span>
     </h2>
-    <p class="text-[#484E53] max-w-3/4 md:max-w-1/2 -mt-4 dark:text-[#C1C1C1]">
-      As a passionate data scientist, with expertise in machine learning, AI, and data analytics, I
-      thrive on the challenges of exploring complex data landscapes and uncovering meaningful
-      patterns that drive innovation
+    <p class="text-[#484E53] px-5 w-full md:max-w-1/2 -mt-4 dark:text-[#C1C1C1]">
+      Hi, I’m a <strong>frontend</strong> developer who loves crafting smooth, responsive user
+      experiences — but I’m also no stranger to the <strong>backend</strong>. From building clean
+      UIs with <a href="https://vuejs.org" class="text-green-400">Vue.js</a> to setting up APIs and
+      managing databases, I enjoy working across the stack to bring ideas to life. Whether it’s a
+      personal project or a team collaboration, I’m always up for solving problems and turning
+      concepts into real, usable products.
     </p>
 
-    <SingleButton href="/contact" shape="pill" class="dark:text-white">Contact me</SingleButton>
+    <SingleButton href="tel:+989050989004" shape="pill" class="dark:text-white"
+      >Send me a text</SingleButton
+    >
   </div>
 
   <div name="#about" class="my-40 flex flex-col gap-8 justify-center items-center text-center">
@@ -67,25 +65,24 @@ const projects = ref([
         Get to know me
       </span>
     </h3>
-    <p class="text-[#484E53] max-w-3/4 md:max-w-1/2 dark:text-[#C1C1C1]">
-      Hi there! I'm [Your Name], a data scientist specializing in data analytics, predictive
-      modeling, natural language processing, machine learning, and AI chatbots. With a passion for
-      unraveling insights from complex datasets, I'm dedicated to helping businesses make informed
-      decisions and stay ahead in today's data-driven world.
+    <p class="text-[#484E53] w-full px-5 md:max-w-1/2 dark:text-[#C1C1C1]">
+      I'm a 24-year-old developer with a passion for building web applications that are fast, clean,
+      and functional. I mainly work with Vue.js on the frontend and FastAPI or Django on the
+      backend, giving me the flexibility to handle both sides of a project when needed.
     </p>
-    <p class="text-[#484E53] max-w-3/4 md:max-w-1/2 dark:text-[#C1C1C1]">
-      I bring a blend of technical expertise, hands-on experience, and a commitment to clear
-      communication to every project. Whether it's uncovering hidden patterns, predicting future
-      trends, or automating processes with AI, I'm here to help you harness the full potential of
-      your data.
+    <p class="text-[#484E53] w-full px-5 md:max-w-1/2 dark:text-[#C1C1C1]">
+      I'm comfortable using Git for version control, and I have a basic grasp of server management,
+      especially on Linux, which is my favorite OS to work with. I enjoy learning new tools and
+      frameworks, and I'm always looking for ways to improve my skills — whether it's diving deeper
+      into backend logic or refining UI/UX details.
     </p>
-    <p class="text-[#484E53] max-w-3/4 md:max-w-1/2 dark:text-[#C1C1C1]">
-      Let's work together to transform your data into actionable insights that drive real results.
-      Get in touch, and let's start unlocking the power of your data today!
+    <p class="text-[#484E53] w-full px-5 md:max-w-1/2 dark:text-[#C1C1C1]">
+      English isn’t my first language, but I’m quite fluent and confident when working with
+      international teams, reading docs, or writing clean, readable code comments and documentation.
     </p>
 
-    <SingleButton href="/contact" shape="pill" class="dark:text-white"
-      >Downlaod Resume</SingleButton
+    <SingleButton href="https://flowcv.com/resume/m2hbmojherc6" shape="pill" class="dark:text-white"
+      >Downlaod My CV</SingleButton
     >
   </div>
 
@@ -112,7 +109,9 @@ const projects = ref([
       >
     </div>
 
-    <SingleButton href="/contact" shape="pill" class="dark:text-white">View All</SingleButton>
+    <SingleButton href="/contact" shape="pill" class="dark:text-white"
+      >Go to <span class="underline">github.com</span></SingleButton
+    >
   </div>
 
   <div name="#services" class="my-40 flex flex-col gap-8 justify-center items-center text-center">
