@@ -6,6 +6,7 @@ import ProjectItem from '@/components/ProjectItem.vue'
 import { ref } from 'vue'
 import ServicesList from '@/layouts/ServicesList.vue'
 import ContactForm from '@/layouts/ContactForm.vue'
+import SVGEmoji from '@/components/SVGEmoji.vue'
 
 const projects = ref([
   {
@@ -35,9 +36,7 @@ const projects = ref([
         class="flex justify-center items-center gap-1 bg-gradient-to-r from-[#4FC3F7] to-[#484E53] dark:to-[#C1C1C1] bg-clip-text text-transparent"
       >
         front-end magician
-        <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg">
-          <image :href="Emoji" class="w-full h-full" />
-        </svg>
+        <SVGEmoji :emoji="Emoji" />
       </span>
     </h2>
     <p class="text-[#484E53] px-5 w-full md:max-w-1/2 -mt-4 dark:text-[#C1C1C1]">
