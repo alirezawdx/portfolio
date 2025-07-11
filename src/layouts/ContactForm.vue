@@ -1,5 +1,9 @@
 <template>
-  <form class="flex justify-center items-cetner flex-col gap-5 w-full md:w-1/3 text-left px-5">
+  <form
+    action="https://formspree.io/f/xanjrvjj"
+    method="post"
+    class="flex justify-center items-cetner flex-col gap-5 w-full md:w-1/3 text-left px-5"
+  >
     <div class="flex-grow">
       <label for="fullName" class="font-medium dark:text-white">Full Name</label>
       <input
@@ -49,8 +53,8 @@
       ></textarea>
     </div>
     <SingleButton
-      href="/none"
-      class="py-4 text-center bg-[#484E53] text-white dark:bg-white dark:text-black dark:border-white"
+      t="formSubmit"
+      class="py-4 cursor-pointer text-center bg-[#484E53] text-white dark:bg-white dark:text-black dark:border-white"
       >Get in touch</SingleButton
     >
   </form>
