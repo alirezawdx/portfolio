@@ -17,5 +17,6 @@ declare module 'vue' {
     ServiceItem: typeof import('./src/components/ServiceItem.vue')['default']
     SingleButton: typeof import('./src/components/SingleButton.vue')['default']
     SiteLogo: typeof import('./src/components/SiteLogo.vue')['default']
+    SVGEmoji: typeof import('./src/components/SVGEmoji.vue')['default']
   }
 }

@@ -1,9 +1,9 @@
 <script setup lang="ts">
+import { ref } from 'vue'
 import SingleButton from '@/components/SingleButton.vue'
 import Character from './../assets/imgs/me-2.jpeg'
 import Emoji from './../assets/imgs/magician.png'
 import ProjectItem from '@/components/ProjectItem.vue'
-import { ref } from 'vue'
 import ServicesList from '@/layouts/ServicesList.vue'
 import ContactForm from '@/layouts/ContactForm.vue'
 import SVGEmoji from '@/components/SVGEmoji.vue'
@@ -104,8 +104,9 @@ const projects = ref([
         class="w-full md:w-1/3 p-5"
         :img="project.img"
         :tech="project.tech"
-        >{{ project.title }}</ProjectItem
       >
+        {{ project.title }}
+      </ProjectItem>
     </div>
 
     <SingleButton href="/contact" shape="pill" class="dark:text-white"
